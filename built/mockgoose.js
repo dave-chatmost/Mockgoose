@@ -38,7 +38,8 @@ var Mockgoose = (function () {
                     _this.mockConnectCalls(connectionString);
                     resolve();
                 }, function (e) {
-                    throw e;
+                    reject(e);
+                    // throw e;
                     // return this.prepareStorage();
                 });
             });
@@ -100,4 +101,4 @@ var ConnectionWrapper = (function () {
     return ConnectionWrapper;
 }());
 exports.ConnectionWrapper = ConnectionWrapper;
-//# sourceMappingURL=/Users/winfinit/workspace/personal/Mockgoose/mockgoose.js.map
+//# sourceMappingURL=/Users/dave/Work/Mockgoose/mockgoose.js.map
